@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>逐眼近裁剪对照台</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">STEREO NEAR-PLANE LAB</p>
+      <h1>逐眼近裁剪对照台</h1>
+      <p class="subtitle">左右眼独立裁剪、独立投影、独立屏幕覆盖。没有平均近面，也没有单眼复制。</p>
+    </div>
+    <a id="json-link" class="json-link" href="/api/report?scene=large-plane" target="_blank" rel="noreferrer">查看 JSON</a>
+  </header>
+
+  <main>
+    <nav id="scene-tabs" class="scene-tabs" aria-label="测试场景"></nav>
+
+    <section class="scene-head">
+      <div>
+        <h2 id="scene-title">载入中</h2>
+        <p id="scene-description"></p>
+      </div>
+      <div id="independence" class="status-pill" role="status">等待分析</div>
+    </section>
+
+    <section class="compare-strip" aria-label="双眼差异">
+      <div class="compare-item">
+        <span>屏幕覆盖差</span>
+        <strong id="delta-coverage">—</strong>
+      </div>
+      <div class="compare-item">
+        <span>裁剪后面积差</span>
+        <strong id="delta-area">—</strong>
+      </div>
+      <div class="compare-item">
+        <span>近面边长度差</span>
+        <strong id="delta-edge">—</strong>
+      </div>
+      <div class="compare-item">
+        <span>近面中心间距</span>
+        <strong id="delta-center">—</strong>
+      </div>
+    </section>
+
+    <section class="eye-grid">
+      <article class="eye-card" data-eye="left">
+        <header class="eye-head">
+          <div>
+            <p class="eye-kicker">LEFT EYE</p>
+            <h2>左眼</h2>
+          </div>
+          <span id="coverage-left" class="coverage-badge">—</span>
+        </header>
+        <div class="canvas-wrap">
+          <canvas id="canvas-left" width="640" height="480" aria-label="左眼裁剪结果"></canvas>
+        </div>
+        <p id="camera-left" class="camera-line"></p>
+        <div id="metrics-left" class="metrics"></div>
+      </article>
+
+      <article class="eye-card" data-eye="right">
+        <header class="eye-head">
+          <div>
+            <p class="eye-kicker">RIGHT EYE</p>
+            <h2>右眼</h2>
+          </div>
+          <span id="coverage-right" class="coverage-badge">—</span>
+        </header>
+        <div class="canvas-wrap">
+          <canvas id="canvas-right" width="640" height="480" aria-label="右眼裁剪结果"></canvas>
+        </div>
+        <p id="camera-right" class="camera-line"></p>
+        <div id="metrics-right" class="metrics"></div>
+      </article>
+    </section>
+
+    <section class="objects">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">OBJECT BREAKDOWN</p>
+          <h2>对象级拒绝与面积</h2>
+        </div>
+        <div class="legend">
+          <span><i class="swatch mesh"></i>裁剪多边形</span>
+          <span><i class="swatch near"></i>近面边</span>
+          <span><i class="swatch screen"></i>视口边界</span>
+        </div>
+      </div>
+      <div id="object-tables" class="object-tables"></div>
+    </section>
+
+    <section class="notes">
+      <div>
+        <p class="eyebrow">CHECKLIST</p>
+        <h2>本场景核对点</h2>
+        <ul id="scene-notes"></ul>
+      </div>
+      <div class="method">
+        <p class="eyebrow">PIPELINE</p>
+        <h2>计算顺序</h2>
+        <ol>
+          <li>每眼将世界三角形变换到自己的视空间。</li>
+          <li>分别对 <code>z = near</code> 做 Sutherland–Hodgman 裁剪。</li>
+          <li>用该眼非对称视锥投影，再裁到屏幕矩形。</li>
+          <li>屏幕多边形面积求和得到覆盖，近面边单独统计长度。</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Go 标准库 · 零外部依赖</span>
+    <span id="generated-note">逐眼结果互不继承</span>
+  </footer>
+</body>
+</html>
