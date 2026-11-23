@@ -1,0 +1,199 @@
+{
+  "width": 640,
+  "height": 360,
+  "fov_y_degrees": 52,
+  "cases": [
+    {
+      "id": "turn",
+      "title": "快速转头 / pure rotational motion",
+      "motion": "yaw +12.0°, pitch -2.0°, camera position unchanged",
+      "pure_rotation": {
+        "method": "pure rotation",
+        "pixels": 230400,
+        "valid": 179994,
+        "rejected": 50406,
+        "coverage": 0.7812239583333334,
+        "mae": 1.457554140693546,
+        "rmse": 4.577035286308263,
+        "bad_pixel_rate": 0.04349033856684112,
+        "out_of_bounds": 50406,
+        "no_coverage": 0,
+        "behind_camera": 0,
+        "source_no_depth": 0,
+        "source_offscreen": 0,
+        "regions": [
+          {
+            "name": "room",
+            "pixels": 211558,
+            "valid": 163162,
+            "coverage": 0.771240038192836,
+            "mae": 1.5638710810933,
+            "rmse": 4.7695123610660906,
+            "bad_pixel_rate": 0.04687365930792709
+          },
+          {
+            "name": "near pole",
+            "pixels": 16924,
+            "valid": 15704,
+            "coverage": 0.9279130229260222,
+            "mae": 0.38438189845474485,
+            "rmse": 1.7817243103478713,
+            "bad_pixel_rate": 0.009360672440142638
+          },
+          {
+            "name": "static specular",
+            "pixels": 1918,
+            "valid": 1128,
+            "coverage": 0.5881126173096975,
+            "mae": 1.0197990543735203,
+            "rmse": 2.8616131442307187,
+            "bad_pixel_rate": 0.02925531914893617
+          }
+        ]
+      },
+      "depth_reprojection": {
+        "method": "depth reprojection",
+        "pixels": 230400,
+        "valid": 178366,
+        "rejected": 52034,
+        "coverage": 0.7741579861111111,
+        "mae": 1.8319522779005404,
+        "rmse": 6.3324634870326015,
+        "bad_pixel_rate": 0.06588138995099962,
+        "out_of_bounds": 0,
+        "no_coverage": 52034,
+        "behind_camera": 0,
+        "source_no_depth": 2464,
+        "source_offscreen": 50438,
+        "regions": [
+          {
+            "name": "room",
+            "pixels": 211558,
+            "valid": 161497,
+            "coverage": 0.7633698560205712,
+            "mae": 1.941676935175322,
+            "rmse": 6.561126164282707,
+            "bad_pixel_rate": 0.07078150058515019
+          },
+          {
+            "name": "near pole",
+            "pixels": 16924,
+            "valid": 15741,
+            "coverage": 0.930099267312692,
+            "mae": 0.6044300446816915,
+            "rmse": 3.229456335335765,
+            "bad_pixel_rate": 0.01340448510259831
+          },
+          {
+            "name": "static specular",
+            "pixels": 1918,
+            "valid": 1128,
+            "coverage": 0.5881126173096975,
+            "mae": 3.2523640661938438,
+            "rmse": 5.660353178799634,
+            "bad_pixel_rate": 0.09663120567375887
+          }
+        ]
+      }
+    },
+    {
+      "id": "dolly",
+      "title": "头部前移 / forward translation",
+      "motion": "camera position +Z 0.68, yaw = pitch = 0",
+      "pure_rotation": {
+        "method": "pure rotation",
+        "pixels": 230400,
+        "valid": 230400,
+        "rejected": 0,
+        "coverage": 1,
+        "mae": 22.260795717587825,
+        "rmse": 38.93500991531042,
+        "bad_pixel_rate": 0.5127256944444445,
+        "out_of_bounds": 0,
+        "no_coverage": 0,
+        "behind_camera": 0,
+        "source_no_depth": 0,
+        "source_offscreen": 0,
+        "regions": [
+          {
+            "name": "room",
+            "pixels": 190932,
+            "valid": 190932,
+            "coverage": 1,
+            "mae": 13.422911472861019,
+            "rmse": 26.07262515923311,
+            "bad_pixel_rate": 0.41294806527978545
+          },
+          {
+            "name": "near pole",
+            "pixels": 38160,
+            "valid": 38160,
+            "coverage": 1,
+            "mae": 65.5747641509458,
+            "rmse": 74.97928918560689,
+            "bad_pixel_rate": 1
+          },
+          {
+            "name": "static specular",
+            "pixels": 1308,
+            "valid": 1308,
+            "coverage": 1,
+            "mae": 48.6934250764528,
+            "rmse": 61.50420992858827,
+            "bad_pixel_rate": 0.8616207951070336
+          }
+        ]
+      },
+      "depth_reprojection": {
+        "method": "depth reprojection",
+        "pixels": 230400,
+        "valid": 205696,
+        "rejected": 24704,
+        "coverage": 0.8927777777777778,
+        "mae": 2.357694526550952,
+        "rmse": 9.107669255825721,
+        "bad_pixel_rate": 0.0820093730553827,
+        "out_of_bounds": 0,
+        "no_coverage": 24704,
+        "behind_camera": 0,
+        "source_no_depth": 2464,
+        "source_offscreen": 68424,
+        "regions": [
+          {
+            "name": "room",
+            "pixels": 190932,
+            "valid": 166232,
+            "coverage": 0.8706345714704712,
+            "mae": 2.105743779777706,
+            "rmse": 7.4964539156843575,
+            "bad_pixel_rate": 0.08654170075557052
+          },
+          {
+            "name": "near pole",
+            "pixels": 38160,
+            "valid": 38156,
+            "coverage": 0.999895178197065,
+            "mae": 3.382229094594524,
+            "rmse": 14.163644487699061,
+            "bad_pixel_rate": 0.06153684872628158
+          },
+          {
+            "name": "static specular",
+            "pixels": 1308,
+            "valid": 1308,
+            "coverage": 1,
+            "mae": 4.490825688073381,
+            "rmse": 7.117873154720243,
+            "bad_pixel_rate": 0.10321100917431193
+          }
+        ]
+      }
+    }
+  ],
+  "conventions": [
+    "pure rotation never reads or writes depth",
+    "rotation rejects source coordinates outside the stored frame",
+    "depth reprojection never samples outside the source frame",
+    "missing source depth is left as a rejection hole, not filled"
+  ]
+}
