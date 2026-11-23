@@ -1,0 +1,389 @@
+{
+  "width": 480,
+  "height": 320,
+  "baseline": 0.36,
+  "mean_disparity_px": 34.972800126414356,
+  "ghost_threshold": 0.08,
+  "global": [
+    {
+      "name": "original",
+      "holes": 6951,
+      "filled": 0,
+      "fill_rate": 0,
+      "mean_error": 0.2760100302869877,
+      "filled_mean_error": 0,
+      "bad_filled": 0,
+      "ghost_rate": 0
+    },
+    {
+      "name": "cross-eye-guarded",
+      "holes": 6951,
+      "filled": 1191,
+      "fill_rate": 0.1713422529132499,
+      "mean_error": 0.2332560397085057,
+      "filled_mean_error": 0.00006130129465289914,
+      "bad_filled": 0,
+      "ghost_rate": 0,
+      "rejected_by_reason": {
+        "mask_no_overlap": 504,
+        "mask_surface_mismatch": 868,
+        "source_tracking_invalid": 4388
+      }
+    },
+    {
+      "name": "no-cross-eye",
+      "holes": 6951,
+      "filled": 6951,
+      "fill_rate": 1,
+      "mean_error": 0.04849467003261809,
+      "filled_mean_error": 0.04849467003261809,
+      "bad_filled": 990,
+      "ghost_rate": 0.14242555028053516
+    },
+    {
+      "name": "reference",
+      "holes": 6951,
+      "filled": 6951,
+      "fill_rate": 1,
+      "mean_error": 0,
+      "filled_mean_error": 0,
+      "bad_filled": 0,
+      "ghost_rate": 0
+    },
+    {
+      "name": "unguarded-diagnostic",
+      "holes": 6951,
+      "filled": 6951,
+      "fill_rate": 1,
+      "mean_error": 0.05162271301303462,
+      "filled_mean_error": 0.05162271301303462,
+      "bad_filled": 907,
+      "ghost_rate": 0.13048482232772263
+    }
+  ],
+  "groups": [
+    {
+      "name": "shared-surface",
+      "rect": [
+        284,
+        193,
+        16,
+        36
+      ],
+      "holes": 576,
+      "modes": [
+        {
+          "name": "original",
+          "holes": 576,
+          "filled": 0,
+          "fill_rate": 0,
+          "mean_error": 0.20748949983260298,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "cross-eye-guarded",
+          "holes": 576,
+          "filled": 576,
+          "fill_rate": 1,
+          "mean_error": 0.00010106277051849355,
+          "filled_mean_error": 0.00010106277051849355,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "no-cross-eye",
+          "holes": 576,
+          "filled": 576,
+          "fill_rate": 1,
+          "mean_error": 0.01817210463973001,
+          "filled_mean_error": 0.01817210463973001,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "reference",
+          "holes": 576,
+          "filled": 576,
+          "fill_rate": 1,
+          "mean_error": 0,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "unguarded-diagnostic",
+          "holes": 576,
+          "filled": 576,
+          "fill_rate": 1,
+          "mean_error": 0.00010106277051849355,
+          "filled_mean_error": 0.00010106277051849355,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        }
+      ]
+    },
+    {
+      "name": "asymmetric-mask",
+      "rect": [
+        319,
+        193,
+        16,
+        36
+      ],
+      "holes": 576,
+      "modes": [
+        {
+          "name": "original",
+          "holes": 576,
+          "filled": 0,
+          "fill_rate": 0,
+          "mean_error": 0.2070861327470353,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "cross-eye-guarded",
+          "holes": 576,
+          "filled": 36,
+          "fill_rate": 0.0625,
+          "mean_error": 0.19426179259889317,
+          "filled_mean_error": 0.00009883380374598004,
+          "bad_filled": 0,
+          "ghost_rate": 0,
+          "rejected_by_reason": {
+            "mask_no_overlap": 504,
+            "source_tracking_invalid": 36
+          }
+        },
+        {
+          "name": "no-cross-eye",
+          "holes": 576,
+          "filled": 576,
+          "fill_rate": 1,
+          "mean_error": 0.026298383162596646,
+          "filled_mean_error": 0.026298383162596646,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "reference",
+          "holes": 576,
+          "filled": 576,
+          "fill_rate": 1,
+          "mean_error": 0,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "unguarded-diagnostic",
+          "holes": 576,
+          "filled": 576,
+          "fill_rate": 1,
+          "mean_error": 0.041498244159929906,
+          "filled_mean_error": 0.041498244159929906,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        }
+      ]
+    },
+    {
+      "name": "wall-corner",
+      "rect": [
+        258,
+        128,
+        7,
+        64
+      ],
+      "holes": 448,
+      "modes": [
+        {
+          "name": "original",
+          "holes": 448,
+          "filled": 0,
+          "fill_rate": 0,
+          "mean_error": 0.23154120746570014,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "cross-eye-guarded",
+          "holes": 448,
+          "filled": 256,
+          "fill_rate": 0.5714285714285714,
+          "mean_error": 0.059485549608664715,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0,
+          "rejected_by_reason": {
+            "mask_surface_mismatch": 192
+          }
+        },
+        {
+          "name": "no-cross-eye",
+          "holes": 448,
+          "filled": 448,
+          "fill_rate": 1,
+          "mean_error": 0.07830379378934928,
+          "filled_mean_error": 0.07830379378934928,
+          "bad_filled": 175,
+          "ghost_rate": 0.390625
+        },
+        {
+          "name": "reference",
+          "holes": 448,
+          "filled": 448,
+          "fill_rate": 1,
+          "mean_error": 0,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "unguarded-diagnostic",
+          "holes": 448,
+          "filled": 448,
+          "fill_rate": 1,
+          "mean_error": 0.08579278429284352,
+          "filled_mean_error": 0.08579278429284352,
+          "bad_filled": 192,
+          "ghost_rate": 0.42857142857142855
+        }
+      ]
+    },
+    {
+      "name": "specular-only",
+      "rect": [
+        299,
+        118,
+        12,
+        84
+      ],
+      "holes": 1008,
+      "modes": [
+        {
+          "name": "original",
+          "holes": 1008,
+          "filled": 0,
+          "fill_rate": 0,
+          "mean_error": 0.43260972119416546,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "cross-eye-guarded",
+          "holes": 1008,
+          "filled": 332,
+          "fill_rate": 0.32936507936507936,
+          "mean_error": 0.33820358723524674,
+          "filled_mean_error": 0.00003756845712707537,
+          "bad_filled": 0,
+          "ghost_rate": 0,
+          "rejected_by_reason": {
+            "mask_surface_mismatch": 676
+          }
+        },
+        {
+          "name": "no-cross-eye",
+          "holes": 1008,
+          "filled": 1008,
+          "fill_rate": 1,
+          "mean_error": 0.20179972286014258,
+          "filled_mean_error": 0.20179972286014258,
+          "bad_filled": 724,
+          "ghost_rate": 0.7182539682539683
+        },
+        {
+          "name": "reference",
+          "holes": 1008,
+          "filled": 1008,
+          "fill_rate": 1,
+          "mean_error": 0,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "unguarded-diagnostic",
+          "holes": 1008,
+          "filled": 1008,
+          "fill_rate": 1,
+          "mean_error": 0.21323014730120748,
+          "filled_mean_error": 0.21323014730120748,
+          "bad_filled": 676,
+          "ghost_rate": 0.6706349206349206
+        }
+      ]
+    },
+    {
+      "name": "transparent-only",
+      "rect": [
+        361,
+        126,
+        64,
+        68
+      ],
+      "holes": 4352,
+      "modes": [
+        {
+          "name": "original",
+          "holes": 4352,
+          "filled": 0,
+          "fill_rate": 0,
+          "mean_error": 0.26237413102523954,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "cross-eye-guarded",
+          "holes": 4352,
+          "filled": 0,
+          "fill_rate": 0,
+          "mean_error": 0.26237413102523954,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0,
+          "rejected_by_reason": {
+            "source_tracking_invalid": 4352
+          }
+        },
+        {
+          "name": "no-cross-eye",
+          "holes": 4352,
+          "filled": 4352,
+          "fill_rate": 1,
+          "mean_error": 0.016852696159359366,
+          "filled_mean_error": 0.016852696159359366,
+          "bad_filled": 91,
+          "ghost_rate": 0.020909926470588234
+        },
+        {
+          "name": "reference",
+          "holes": 4352,
+          "filled": 4352,
+          "fill_rate": 1,
+          "mean_error": 0,
+          "filled_mean_error": 0,
+          "bad_filled": 0,
+          "ghost_rate": 0
+        },
+        {
+          "name": "unguarded-diagnostic",
+          "holes": 4352,
+          "filled": 4352,
+          "fill_rate": 1,
+          "mean_error": 0.018726643974596304,
+          "filled_mean_error": 0.018726643974596304,
+          "bad_filled": 39,
+          "ghost_rate": 0.008961397058823529
+        }
+      ]
+    }
+  ]
+}
