@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "name": "custom-on-time",
+  "description": "A file-based replay with a stereo pose update 1 ms before F0002 deadline.",
+  "frameCount": 4,
+  "firstSubmitNs": 0,
+  "framePeriodNs": 16666667,
+  "deadlineOffsetNs": 8000000,
+  "compositeOffsetNs": 8100000,
+  "scanoutOffsetNs": 15000000,
+  "events": [
+    {
+      "atNs": -2000000,
+      "kind": "pose",
+      "eye": "left",
+      "timestampNs": -3000000,
+      "yawDeg": -1.5,
+      "pitchDeg": 0.5,
+      "note": "initial left pose"
+    },
+    {
+      "atNs": -2000000,
+      "kind": "pose",
+      "eye": "right",
+      "timestampNs": -3000000,
+      "yawDeg": -1.5,
+      "pitchDeg": 0.5,
+      "note": "initial right pose"
+    },
+    {
+      "atNs": 23666667,
+      "kind": "pose",
+      "eye": "left",
+      "timestampNs": 18000000,
+      "yawDeg": 3.0,
+      "pitchDeg": 1.0,
+      "note": "left update 1 ms before F0002 deadline"
+    },
+    {
+      "atNs": 23666667,
+      "kind": "pose",
+      "eye": "right",
+      "timestampNs": 18000000,
+      "yawDeg": 3.0,
+      "pitchDeg": 1.0,
+      "note": "right update 1 ms before F0002 deadline"
+    }
+  ]
+}
